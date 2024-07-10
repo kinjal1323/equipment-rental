@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Equipment Rental Hub - Equipment</title>
+    <link rel="stylesheet" href="sp.css">
+</head>
+<body style="background-image: url('bg2.jpg'); background-size: cover; background-position: center;">
+    <header>
+        <h1>Sports Equipment Rental Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Rent Your Equipment and Earn Money</h2>
+        <p>Are your sports equipment just collecting dust in the garage? Turn them into assets and start earning money today! With our platform, you can easily rent out your equipment to others and make a profit while helping fellow enthusiasts pursue their passions. Don't let your gear go to waste – rent them out now and start earning!</p>
+    </section>
+    
+
+    <section class="equipment">
+     
+        <!-- Form to add equipment info to PHP file -->
+        <form enctype="multipart/form-data" action="add_equipment.php" method="POST">
+            <table>
+                <tr>
+                    <td>Product Name:</td>
+                    <td><input type="text" name="product_name"></td>
+                </tr>
+                <tr>
+                    <td>Upload Photo:</td>
+                    <td><input type="file" name="equipment_photo" accept="image/*" ></td>
+                </tr>
+                <tr>
+                    <td>Rent per Month:</td>
+                    <td><input type="text" name="rent_per_month"></td>
+                </tr>
+                <tr>
+                    <td>Available for (months):</td>
+                    <td><input type="text" name="available_for_months"></td>
+                </tr>
+                <tr>
+                    <td>Owner Name:</td>
+                    <td><input type="text" name="owner_name"></td>
+                </tr>
+                <tr>
+                    <td>Owner Address:</td>
+                    <td><input type="text" name="owner_address"></td>
+                </tr>
+                <tr>
+                    <td>Owner Contact:</td>
+                    <td><input type="text" name="owner_contact"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="submit" value="Add equipment" class="btn"></td>
+                </tr>
+            </table>
+        </form> <br><br><br>
+        <form enctype="multipart/form-data" action="update_equipment.php" method="POST">
+            <table>
+                <tr>
+                    <td>Enter Product ID For Update:</td>
+                    <td><input type="text" name="product_id"></td>
+                </tr>
+                <tr>
+                    <td>Product Name:</td>
+                    <td><input type="text" name="product_name"></td>
+                </tr>
+                <tr>
+                    <td>Rent per Month:</td>
+                    <td><input type="text" name="rent_per_month"></td>
+                </tr>
+                <tr>
+                    <td>Available for (months):</td>
+                    <td><input type="text" name="available_for_months"></td>
+                </tr>
+                <tr>
+                    <td>Owner Name:</td>
+                    <td><input type="text" name="owner_name"></td>
+                </tr>
+                <tr>
+                    <td>Owner Address:</td>
+                    <td><input type="text" name="owner_address"></td>
+                </tr>
+                <tr>
+                    <td>Owner Contact:</td>
+                    <td><input type="text" name="owner_contact"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><button type="submit" name="update" class="btn">Update</button></td>
+                </tr>
+            </table>
+        </form><br><br><br>
+        <form enctype="multipart/form-data" action="delete_equipment.php" method="POST">
+            <table>
+                <tr>
+                    <td>Enter Product ID For Update:</td>
+                    <td><input type="text" name="product_id"></td>
+                </tr>
+               
+                <tr>
+                    <td colspan="2" style="text-align: center;"><button type="submit" name="delete" class="btn">Delete</button></td>
+                </tr>
+            </table>
+        </form>                
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sports Equipment Rental Hub</p>
+    </footer>
+</body>
+</html>

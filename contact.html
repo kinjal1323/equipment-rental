@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sports Equipment Rental Hub</title>
+    <link rel="stylesheet" href="sp.css">
+</head>
+<body style="background-image: url('bg2.jpg');">
+    <header>
+        <h1>Sports Equipment Rental Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Contact Us</h2>
+        <p>We appreciate your interest in Sports Equipment Rental Hub. 
+            We have received your message and will get back to you as soon as possible.</p>
+        <p>In the meantime, if you have any urgent inquiries, feel free to contact us via email at 
+            <a href="sport_eguipment@gmail.com">sport_eguipment@gmail.com</a> or by phone at <strong>987654321</strong>.</p>
+        <form action="contact.php" method="post">
+            <table>
+                <tr>
+                    <td><label for="name">Your Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Your Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Your Message:</label></td>
+                    <td><textarea id="message" name="message" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+        <h2>Thank You for Contacting Us!</h2>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sports Equipment Rental Hub</p>
+    </footer>
+</body>
+</html>

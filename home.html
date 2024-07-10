@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Equipment Rental Hub - Home</title>
+    <link rel="stylesheet" href="sp.css">
+</head>
+<body style="background-image: url('bg2.jpg');">
+    <header>
+        <h1>Sports Equipment Rental Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <form action="show.php" method="GET">
+            <label for="category">Search for a Product : </label>
+            <select name="category" id="category">
+                <option value="all">All</option>
+                <option value="Bicycle">Bicycle</option>
+                <option value="Football shoes">Football shoes</option>
+                <option value="SkateBoard">SkateBoard</option>
+                <option value="carrom board">carrom board</option>
+                <option value="hockey stick">hockey stick</option>
+                <option value="table tennis">table tennis </option>
+                <!-- Add more options for other categories if needed -->
+            </select>
+            <input type="submit" value="Filter">
+        </form> <br><br><br>
+        <h2>Request Rental</h2>
+        <p>Please provide the necessary details below to request the rental of equipment.</p>
+        <form action="rental_processing.php" method="post">
+            <table>
+                <tr>
+                    <td><label for="product_id">Product ID:</label></td>
+                    <td><input type="text" id="product_id" name="product_id" required></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Your Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="contact">Contact Number:</label></td>
+                    <td><input type="text" id="contact" name="contact" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="rental_duration">Rental Duration (in months):</label></td>
+                    <td><input type="number" id="rental_duration" name="rental_duration" required></td>
+                </tr>
+                <tr>
+                    <td><label for="additional_notes">Additional Notes:</label></td>
+                    <td><textarea id="additional_notes" name="additional_notes"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" class="btn">Submit Request</button></td>
+                </tr>
+            </table>
+        </form>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sports Equipment Rental Hub</p>
+    </footer>
+</body>
+</html>

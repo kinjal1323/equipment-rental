@@ -1,0 +1,165 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background-size: cover; /* This ensures that the background image covers the entire background without stretching */
+    background-position: center; /* This centers the background image */
+}
+
+/* Header styles */
+header {
+    background-color:grey;
+    color: #fff;
+    padding: 1rem;
+    text-align: center; /* Center align the content */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Increase font size for the header */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px; /* Add some top margin to the navigation */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px; /* Add padding to the navigation links */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+/* sp,about,contact section styles */
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px; /* Increase maximum width for better readability */
+    margin: 0 auto 20px;
+}
+
+.hero img {
+    border-radius: 10px; /* Add rounded corners */
+    margin: 20px; /* Add margin around images */
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Equipment section styles */
+.equipment {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.equipment-item {
+    margin-bottom: 40px;
+}
+
+.equipment-item img {
+    max-width: 100%;
+}
+
+.equipment-item h3 {
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Form styles */
+form {
+    margin: 0 auto; /* Center the form horizontally */
+    max-width: 500px; /* Set a maximum width for the form */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a slight shadow effect */
+}
+
+form table {
+    width: 100%; /* Ensure the table takes up the full width of the form */
+}
+
+form table td {
+    padding: 10px;
+    text-align: left; /* Align the text to the left within table cells */
+}
+
+form table td input[type="text"] {
+    width: calc(100% - 20px); /* Adjust input width to fit within table cells */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form table td input[type="file"] {
+    width: calc(100% - 20px); /* Adjust input width to fit within table cells */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form table td input[type="submit"] {
+    width: 100%; /* Make the submit button fill the entire width of the table cell */
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form table td input[type="submit"]:hover {
+    background-color: #555;
+}
